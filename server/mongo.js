@@ -24,10 +24,10 @@ module.exports.connect = async () => {
 }
 
 module.exports.closeDB = async () => {
-  mongod = new MongoMemoryServer()
-  // await mongoose.connection.dropDatabase()
-  await mongoose.disconnect()
-  // await mongoose.connection.close()
+  // mongod = new MongoMemoryServer()
+  await mongoose.connection.dropDatabase()
+  // await mongoose.disconnect()
+  await mongoose.connection.close()
   await mongod.stop()
 }
 
