@@ -16,5 +16,10 @@
   },
   "devDependencies": {
     "mongodb-memory-server": "^6.9.2"
+  },
+  "config": {
+    "mongodbMemoryServer": {
+      "version": "4.2.3"
+    }
   }
 }
