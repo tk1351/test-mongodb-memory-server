@@ -9,4 +9,4 @@ before_install:
 
 script:
   - cd server && yarn install --frozon-lockfile
-  - yarn test
+  - yarn test --watchAll=false
