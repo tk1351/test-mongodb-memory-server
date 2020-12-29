@@ -3,11 +3,7 @@ const mongoose = require('mongoose')
 
 let mongod
 
-// const mongod = new MongoMemoryServer({
-//   autoStart: true,
-//   debug: true,
-// })
-
+jasmine.DEFAULT_TIMEOUT_INTERVAL = 600000
 module.exports.connect = async () => {
   mongod = new MongoMemoryServer()
   const uri = await mongod.getUri()
